@@ -719,15 +719,6 @@ ul{
 
 /* Recent Products */
 
-/* #recent-products{
-    max-width: 1200px;
-    width: 90%;
-    margin: 50px auto;
-} */
-
-
-/* Recent Products */
-
 #recent-products {
     max-width: 1200px;
     width: 90%;
@@ -736,7 +727,7 @@ ul{
 
 .recent-product-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-gap: 40px;
     margin-top: 20px;
 }
@@ -834,6 +825,65 @@ ul{
 .product-cart-btn:hover svg {
     fill: #ffffff;
 }
+
+/* Partner */
+#partner{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    grid-gap :15px;
+}
+
+#partner img{
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+
+#partner img:hover{
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Services */
+
+.services{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    padding-bottom: 10px;
+    margin: 15px;
+    flex-grow: 0.7;
+}
+
+.service-box svg{
+    fill: var(--secondary-color);
+    font-size: 2rem;
+    margin: 15px;
+}
+
+
 
 
 
