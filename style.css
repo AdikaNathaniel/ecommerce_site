@@ -883,6 +883,35 @@ ul{
     margin: 15px;
 }
 
+.service-box span{
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.service-box p{
+   color: #878787;
+   margin: 0px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+}
+.footer-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
 
 
 
