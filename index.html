@@ -16,8 +16,20 @@
 <body>
       <section id="main">
          <header>
+
+            <!-- Button -->
+              <input type="checkbox" class="menu-btn" id="menu-btn">
+
+
             <!-- Top Header -->
                 <div class="header-top">
+
+                    <!-- Icon -->
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+
                       <div class="nav-location">
                           <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em"  width="1em" ><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg> 
@@ -49,15 +61,15 @@
             <nav class="navigation">
                 <!-- The menus -->
                 <ul class="menu">
-                   <li><a href='#'>Home</a></li>
-                   <li><a href='#'>Category</a></li>
-                   <li><a href='#'>Shop</a></li>
+                   <li><a href='index.html'>Home</a></li>
+                   <li><a href='#category'>Category</a></li>
+                   <li><a href='#shopping-banner'>Shop</a></li>
 
                    <li>
-                    <a href='#'>Popular</a>
+                    <a href='#popular-dress'>Popular</a>
                     <span class="nav-label">Hot Offer</span>
                 </li>
-                   <li><a href='#'>Recent</a></li>
+                   <li><a href='#recent-products'>Recent</a></li>
                 </ul>
             </nav>
 
@@ -369,7 +381,7 @@
 
     <section id="recent-products">
         <!-- Popular Dress -->
-        <h2>Popular Dresses</h2>
+        <h2>Recent Dress</h2>
     
         <!-- Products Container -->
         <div class="recent-product-container">
@@ -619,7 +631,52 @@
                       </a>
                 </div>
                   </div>
+
+                  <!-- Link Box -->
+        <div class="footer-link-box">
+            <strong>Main Link's</strong>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Category</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Popular</a></li>
+                  <li><a href="#">Recent</a></li>
+               </ul>
           </div>
+
+                      <!-- Link Box -->
+        <div class="footer-link-box">
+            <strong>Social Link's</strong>
+               <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">YouTube</a></li>
+               </ul>
+          </div>
+
+         <!-- Subscribe -->
+          <div class="footer-subscribe">
+               <strong>Subscribe Now!</strong>
+               <p>Kindly Subscribe to this site for more fashion styles!</p>
+        <form class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <button>Subscribe</button>
+        </form>
+          </div>
+
+
+
+
+          </div>
+
+
+          <!-- Bottom -->
+           <div class="nat-boot">
+                  <span class="footer-owner">Made By Going To Internet</span>
+
+                  <span class="copyright">© Copyright 2024- Going To Internet</span>
+           </div>
      </footer>
 
 
@@ -662,6 +719,28 @@ document.querySelector('.search-bar').classList.remove('search-bar-active');
             formElement.classList.remove('login-active');
                 }
             });   
+        
+             
+            // Fixing the header
+
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', function(){
+                  const currentScrollY = window.scrollY;
+
+            //   Checking if the scroll is at the top
+            if(currentScrollY === 0){
+                header.classList.remove('header-fix');
+            }else if(currentScrollY  < lastScrollY){
+                header.classList.add('header-fix');
+            }else{
+                header.classList.remove('header-fix');
+            }
+
+            lastScrollY = currentScrollY;
+            });
+           
         });
     </script>
 
