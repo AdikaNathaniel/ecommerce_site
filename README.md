@@ -24,7 +24,7 @@ To run the website locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/AdikaNathaniel/ecommerce-website.git
+    git clone https://github.com/AdikaNathaniel/ecommerce_website.git
     ```
 
 2. Open the project folder in your preferred text editor (e.g., VSCode).
